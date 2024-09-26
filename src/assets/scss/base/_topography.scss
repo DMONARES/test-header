@@ -1,16 +1,9 @@
-@font-face 
-{
-  font-family: "Roboto";
-  src: url("./pages/fonts/Roboto-Regular.woff2") format("woff2");
-  font-display: swap;
-  font-weight: 400;
-  font-style: normal;
-}
+@import "./global";
 
 @font-face 
 {
   font-family: "OpenSans";
-  src: url("./pages/fonts/Roboto-Regular.woff2") format("woff2");
+  src: url("./pages/fonts/OpenSans-Regular.woff2") format("woff2");
   font-display: swap;
   font-weight: 400;
   font-style: normal;
@@ -28,6 +21,22 @@
 body
 {
   font-family: "OpenSans", sans-serif;
+  font-size: 14px;
   font-weight: 400;
 }
 
+@mixin g-btn-text-sb()
+{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@mixin g-text()
+{
+  font-size: 14px;
+}
+
+@mixin input-text-placeholder()
+{
+  letter-spacing: 0.05em;
+}

@@ -1,0 +1,83 @@
+@import './topography';
+@import './colors';
+
+@mixin dflex(){
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin g-btn()
+{
+  @include dflex();
+  @include g-btn-text-sb();
+  padding: 11px 16px 13px;
+  position: relative;
+  background-color: $white-color;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+
+  &:hover
+  {
+      background-color: $btn-grey-color ;
+  }
+
+  &--active
+  {
+    &::after
+    {
+      content:'3';
+      position: absolute;
+      display: inline-block;
+      right: 0;
+      width: 17px;
+      height: 17px;
+      margin-right: 16px;
+      font-size: 15px;
+      text-align: center;
+      border: none;
+      border-radius: 50%;
+      background-color: $accent-color;
+      color: $white-color;
+    }
+    span
+  {
+    margin-right: 30px;
+  }
+  }
+}
+
+@mixin nav-btn() 
+{
+  @include dflex();
+  padding: 16px 16px 24px;
+  background-color: $white-color;
+  color: $text-color;
+  border: none;
+  border-radius: 0px;
+  outline: none;
+  cursor: pointer;
+
+  > .header__nav-icon
+  {
+    margin-right: 8px;
+  }
+
+  &--active
+  {
+    @include g-btn-text-sb;
+    background-color: $accent-color;
+    color: $white-color;
+    border-radius: 3px 0px 0px 3px;
+
+    > .header__nav-icon
+    {
+      margin-right: 15px;
+    }
+  }
+}
+
+
+

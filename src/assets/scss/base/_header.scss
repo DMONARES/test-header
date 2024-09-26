@@ -1,0 +1,54 @@
+@import './_buttons';
+@import './_global';
+
+.middle-btn
+{
+  @include g-btn();
+}
+
+.header__btn-icon
+{
+  margin-right: 15px;
+}
+
+.header__nav-btn
+{
+@include nav-btn();
+}
+
+.header__form 
+{
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+
+  input 
+  {
+    width: 100%;
+    height: 42px;
+    padding-left: 10px;
+    border: 2px solid $btn-grey-color;
+    border-radius: 3px;
+    outline: none;
+    background: $white-color;
+    color: $text-color;
+  }
+
+  button 
+  {
+    position: absolute; 
+    top: 0;
+    right: 0px;
+    width: 42px;
+    height: 42px;
+    border: none;
+    background: $accent-color;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+
+    &::after
+    {
+      content: url(./../src/assets/img/search.svg);      
+    }
+  }
+}
