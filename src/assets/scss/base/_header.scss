@@ -49,3 +49,53 @@
     }
   }
 }
+
+.header__top 
+{
+  min-height: 36px;
+  padding: 8px 0;
+  background-color: $btn-grey-color;
+
+  .container {@include dflex();}
+}
+.header__location 
+{
+  @include dflex();
+  cursor: pointer;
+
+  img {margin-right: 8px;}
+}
+
+.header__top-menu
+{
+  ul 
+  {
+    @include dflex();
+
+    li
+    {
+      display: flex;
+      cursor: pointer;
+
+      &:not(:last-child) {margin-right: 24px;}
+
+      img {margin-left: 8px;}
+
+      a 
+      {
+        color: $text-color;
+      
+        &:hover
+        {
+          color: $accent-color;
+        }
+      }
+    }
+  }  
+}
+.header__number 
+{
+  a {color: $grey-color;}
+}
+
+

@@ -476,4 +476,51 @@ body {
 }
 .header__form button::after {
   content: url(./../src/assets/img/search.svg);
+}
+
+.header__top {
+  min-height: 36px;
+  padding: 8px 0;
+  background-color: #f0f0f0;
+}
+.header__top .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__location {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.header__location img {
+  margin-right: 8px;
+}
+
+.header__top-menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__top-menu ul li {
+  display: flex;
+  cursor: pointer;
+}
+.header__top-menu ul li:not(:last-child) {
+  margin-right: 24px;
+}
+.header__top-menu ul li img {
+  margin-left: 8px;
+}
+.header__top-menu ul li a {
+  color: #1D1D1B;
+}
+.header__top-menu ul li a:hover {
+  color: #E0001B;
+}
+
+.header__number a {
+  color: #696969;
 }/*# sourceMappingURL=style.css.map */
