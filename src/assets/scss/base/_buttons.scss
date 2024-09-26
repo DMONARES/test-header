@@ -65,10 +65,15 @@
     margin-right: 8px;
   }
 
+  &:hover
+  {
+    background-color: $btn-grey-color
+  }
+
   &--active
   {
     @include g-btn-text-sb;
-    background-color: $accent-color;
+    background-color: $accent-color !important;
     color: $white-color;
     border-radius: 3px 0px 0px 3px;
 
@@ -78,6 +83,4 @@
     }
   }
 }
-
-
 

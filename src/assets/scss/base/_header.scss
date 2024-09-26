@@ -1,20 +1,17 @@
 @import './_buttons';
 @import './_global';
 
-.middle-btn
+.container
 {
-  @include g-btn();
+  max-width: 1120px;
+  margin: 0 auto;
 }
 
-.header__btn-icon
-{
-  margin-right: 15px;
-}
+.middle-btn {@include g-btn();}
 
-.header__nav-btn
-{
-@include nav-btn();
-}
+.header__btn-icon {margin-right: 15px;}
+
+.header__nav-btn {@include nav-btn();}
 
 .header__form 
 {

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Header</title>
+  <title>Header Co.</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,14 +11,17 @@
       <img src="./../src/assets/img/heart.svg" alt="Favorite" class="header__btn-icon">
       <span>Favorite</span>
     </button>
+
     <button class="middle-btn middle-btn--active">
       <img src="./../src/assets/img/heart.svg" alt="Favorite" class="header__btn-icon">
       <span>Favorite</span>
     </button>
+
     <button class="header__nav-btn header__nav-btn--active">
       <img src="./../src/assets/img/menu.svg" alt="Catalog" class="header__nav-icon">
       Catalog
     </button>
+
     <button class="header__nav-btn">
       <img src="./../src/assets/img/scales.svg" alt="Catalog" class="header__nav-icon">
       Catalog
@@ -31,16 +34,104 @@
 
     <header class="header">
       <div class="header__top">
+        <div class="container">
 
+          <div class="header__location">
+            <img src="./../src/assets/img/location.svg" alt="Location">
+            Махачкала
+          </div>
+
+          <div class="header__top-menu">
+            <ul>
+              <li><a href="#">Магазины</a></li>
+              <li><a href="#">Покупателям</a></li>
+              <li><a href="#">Юридическим лицам</a></li>
+            </ul>
+          </div>
+
+          <div class="header__number">
+            <a href="tel:12121">8-800-999-99-99 (c 03:00 до 22:00)</a>
+          </div>
+
+        </div>
       </div>
 
       <div class="container">
         <div class="header__mid">
+          <div class="header__logo">
+            <a href="/"><img src="./../src/assets/img/header__logo.svg" alt="Header Co."></a>
+          </div>
 
+          <form class="header__form">
+            <input type="search" placeholder="Быстрый поиск">
+            <button type="submit"></button> 
+          </form>
+
+          <div class="header__mid-menu">
+            <ul>
+              <li>
+                <button class="middle-btn middle-btn--active">
+                  <img src="./../src/assets/img/heart.svg" alt="Favorite" class="header__btn-icon">
+                  <span>Избранное</span>
+                </button>
+              </li>
+              <li>
+                <button class="middle-btn">
+                  <img src="./../src/assets/img/scales.svg" alt="Scales" class="header__btn-icon">
+                  <span>Сравнить</span>
+                </button>
+              </li>
+              <li>
+                <button class="middle-btn middle-btn--active">
+                  <img src="./../src/assets/img/shopping-cart.svg" alt="Shopping Cart" class="header__btn-icon">
+                  <span>Корзина</span>
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div class="header__bottom">
-          
+          <nav class="header__nav">
+            <ul>
+              <li>
+                <button class="header__nav-btn header__nav-btn--active">
+                  <img src="./../src/assets/img/menu.svg" alt="Catalog" class="header__nav-icon">
+                  Каталог
+                </button>
+              </li>
+              <li>
+                <button class="header__nav-btn">
+                  <img src="./../src/assets/img/agenda.svg" alt="Agenda" class="header__nav-icon">
+                  Бумажная продукция
+                </button>
+              </li>
+              <li>
+                <button class="header__nav-btn">
+                  <img src="./../src/assets/img/briefcase.svg" alt="Briefcase" class="header__nav-icon">
+                  Товары для школы
+                </button>
+              </li>
+              <li>
+                <button class="header__nav-btn">
+                  <img src="./../src/assets/img/stationery.svg" alt="Stationery" class="header__nav-icon">
+                  Товары для творчества
+                </button>
+              </li>
+              <li>
+                <button class="header__nav-btn">
+                  <img src="./../src/assets/img/abacus.svg" alt="Abacus" class="header__nav-icon">
+                  Товары для торговли
+                </button>
+              </li>
+              <li>
+                <button class="header__nav-btn">
+                  <img src="./../src/assets/img/sales.svg" alt="Sales" class="header__nav-icon">
+                  Скидки и акции
+                </button>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>

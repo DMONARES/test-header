@@ -374,6 +374,11 @@ body {
   font-weight: 400;
 }
 
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
 .middle-btn {
   display: flex;
   justify-content: space-between;
@@ -429,10 +434,13 @@ body {
 .header__nav-btn > .header__nav-icon {
   margin-right: 8px;
 }
+.header__nav-btn:hover {
+  background-color: #f0f0f0;
+}
 .header__nav-btn--active {
   font-size: 16px;
   font-weight: 600;
-  background-color: #E0001B;
+  background-color: #E0001B !important;
   color: #fff;
   border-radius: 3px 0px 0px 3px;
 }
