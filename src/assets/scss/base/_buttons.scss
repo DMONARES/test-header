@@ -52,7 +52,7 @@
 @mixin nav-btn() 
 {
   @include dflex();
-  padding: 16px 16px 24px;
+  padding: 16px 21px 16px;
   background-color: $white-color;
   color: $text-color;
   border: none;
@@ -83,4 +83,3 @@
     }
   }
 }
-

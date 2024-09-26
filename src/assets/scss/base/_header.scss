@@ -65,7 +65,6 @@
 
   img {margin-right: 8px;}
 }
-
 .header__top-menu
 {
   ul 
@@ -97,5 +96,16 @@
 {
   a {color: $grey-color;}
 }
+.header__mid 
+{
+  padding-top: 34px;
+  @include dflex();
+}
+.header__mid-menu {ul {@include dflex();}}
 
+.header__bottom 
+{
+  padding-top: 28px;
 
+  nav {ul { @include dflex(); }}
+}
